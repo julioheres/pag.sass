@@ -73,11 +73,14 @@ $f-m: 'Spartan', sans-serif;
 }
 
 @media screen and (min-width:320px) and (max-width: 479px){
-    .pie p{
-        padding: 50px;
-        font-size: 0.7rem;
-        font-weight: 800;
-    }
+    .pie{
+        p{
+            padding: 50px;
+            font-size: 0.7rem;
+            font-weight: 800;
+        }
+    } 
+    
 }
 
 /* --------------------------------- */
@@ -94,16 +97,17 @@ $f-m: 'Spartan', sans-serif;
     /* overflow: hidden; */
     .retra{
         display: flex;
+        .retra__img{
+            width: 100%;
+            box-shadow: 23px 28px 17px -24px rgba(0,0,0,0.79);
+            transition: 1s;
+        }
+        .retra__img:hover{
+            transform: scale(0.9);
+        }
     
     }
-    .retra__img{
-        width: 100%;
-        box-shadow: 23px 28px 17px -24px rgba(0,0,0,0.79);
-        transition: 1s;
-    }
-    .retra__img:hover{
-        transform: scale(0.9);
-    }
+    
 }
 
 /* MEDIA Q / RETRATOS */
@@ -115,15 +119,15 @@ $f-m: 'Spartan', sans-serif;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3,auto);
         gap: 5px;
-        
+        .retra__img{
+            width: 100%;
+            box-shadow: 20px 24px 13px -22px rgba(0,0,0,0.29);
+        }
+        #del{
+            width: 0;
+        }
     }
-    .retra__img{
-        width: 100%;
-        box-shadow: 20px 24px 13px -22px rgba(0,0,0,0.29);
-    }
-    #del{
-        width: 0;
-    }
+    
 }
 
 @media screen and (min-width:480px) and (max-width: 600px){
@@ -153,13 +157,14 @@ $f-m: 'Spartan', sans-serif;
         gap: 20px;
         margin: 50px;
         box-shadow: 5px 6px 12px -1px rgba(0,0,0,0.3);
+        .proyecimg{
+            width: 100%;
+            .descrip-titu{
+                margin: 10px;
+            }
+        }
     }
-    .proyecimg{
-        width: 100%;
-    }
-    .descrip-titu{
-        margin: 10px;
-    }
+    
     
 }
 
@@ -170,51 +175,59 @@ $f-m: 'Spartan', sans-serif;
     .proyec{
         width: 100%;
         margin: 10px auto;
+        .proyec__conte{
+            background-color: rgba(0, 0, 0, 0.10);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            gap: 5px;
+            margin: 20px;
+            box-shadow: 5px 6px 12px -1px rgba(0,0,0,0.3);
+            .proyecimg{
+                width: 100%;
+                .descrip-titu{
+                    margin: 10px;
+                    .proyec__conte--box{
+                        padding: 10px;
+                    }
+                }
+            }
+        }
     }
-    .proyec__conte{
-        background-color: rgba(0, 0, 0, 0.10);
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        gap: 5px;
-        margin: 20px;
-        box-shadow: 5px 6px 12px -1px rgba(0,0,0,0.3);
-    }
-    .proyecimg{
-        width: 100%;
-    }
-    .descrip-titu{
-        margin: 10px;
-    }
-    .proyec__conte--box{
-        padding: 10px;
-    }
+    
+    
+    
+    
 }
 
 @media screen and (min-width:600px) and (max-width: 768px){
     .proyec{
         width: 100%;
         margin: 10px auto;
+        .proyec__conte{
+            background-color: rgba(0, 0, 0, 0.10);
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 5px;
+            margin: 20px;
+            box-shadow: 5px 6px 12px -1px rgba(0,0,0,0.3);
+            .proyecimg{
+                width: 100%;
+                .descrip-titu{
+                    margin: 10px;
+                    .proyec__conte--box{
+                        padding: 10px;
+                    }
+                }
+            }
+        }
     }
-    .proyec__conte{
-        background-color: rgba(0, 0, 0, 0.10);
-        display: flex;
-        align-items: center;
-        text-align: center;
-        gap: 5px;
-        margin: 20px;
-        box-shadow: 5px 6px 12px -1px rgba(0,0,0,0.3);
-    }
-    .proyecimg{
-        width: 100%;
-    }
-    .descrip-titu{
-        margin: 10px;
-    }
-    .proyec__conte--box{
-        padding: 10px;
-    }
+    
+    
+    
+    
 }
 
 /* ----------------------------------------------------- */
@@ -366,43 +379,43 @@ $f-m: 'Spartan', sans-serif;
         width: 85%;
         margin: 30px auto;
         padding: 30px 20px;
-    }
-    .texto1 {
-        margin-bottom: 20px;
-    }
-    .direccion {
-        font-size: 20px;
-        font-weight: 800;
-        letter-spacing: 2px;
-    }
-    .direccion__p {
-        font-size: 11px;
-    }
-    .form__label {
+        .texto1 {
+            margin-bottom: 20px;
+        }
+        .direccion {
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+        .direccion__p {
+            font-size: 11px;
+        }
+        .form__label {
+            font-size: 12px;
+        }
+        .form__input, .form__textarea {
+            width: 80%;
+            padding: 5px;
+            font-size: 10px;
+        }
+        .form__textarea {
+            height: 70px;
+        }
+        .form__input--submit {
+            font-size: 13px;
+            padding: 10px;
+        }
+        #pf {
+            margin: 24px;
+            font-size: 13px;
+        }
+        .gmail {
+        margin: 5px;
         font-size: 12px;
-    }
-    .form__input, .form__textarea {
-        width: 80%;
-        padding: 5px;
-        font-size: 10px;
-    }
-    .form__textarea {
-        height: 70px;
-    }
-    .form__input--submit {
-        font-size: 13px;
-        padding: 10px;
-    }
-    #pf {
-        margin: 24px;
-        font-size: 13px;
-    }
-    .gmail {
-    margin: 5px;
-    font-size: 12px;
-    }
-    #telef {
-        font-size: 10px;
+        }
+        #telef {
+            font-size: 10px;
+        }
     }
 }
 
@@ -411,41 +424,41 @@ $f-m: 'Spartan', sans-serif;
         width: 75%;
         margin: 30px auto;
         padding: 30px 20px;
-    }
-    .texto1 {
-        margin-bottom: 20px;
-    }
-    .direccion {
-        font-size: 25px;
-        font-weight: 800;
-        letter-spacing: 2px;
-    }
-    .direccion__p {
-        font-size: $f-s;
-    }
-    .form__label {
-        font-size: $f-s;
-    }
-    .form__input, .form__textarea {
-        width: 60%;
-        padding: 8px;
-        font-size: $f-s;
-    }
-    .form__textarea {
-        height: 85px;
-    }
-    .form__input--submit {
-        font-size: $f-s;
-        padding: 15px;
-    }
-    #pf {
-        margin: 45px;
-        font-size: $f-s;
-    }
-    .gmail {
-    font-size: 13px;
-    }
-    #telef {
+        .texto1 {
+            margin-bottom: 20px;
+        }
+        .direccion {
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+        .direccion__p {
+            font-size: $f-s;
+        }
+        .form__label {
+            font-size: $f-s;
+        }
+        .form__input, .form__textarea {
+            width: 60%;
+            padding: 8px;
+            font-size: $f-s;
+        }
+        .form__textarea {
+            height: 85px;
+        }
+        .form__input--submit {
+            font-size: $f-s;
+            padding: 15px;
+        }
+        #pf {
+            margin: 45px;
+            font-size: $f-s;
+        }
+        .gmail {
         font-size: 13px;
+        }
+        #telef {
+            font-size: 13px;
+        }
     }
 }
