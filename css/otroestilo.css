@@ -32,12 +32,21 @@ body {
 .banner {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 20px auto;
 }
 .banner h2 {
   font-size: 50px;
   font-weight: 15;
   letter-spacing: 10px;
+}
+
+.btn-outline-light {
+  color: white;
+  border-color: rgba(248, 249, 250, 0);
+  border-bottom-color: currentcolor;
+  font-size: 20px;
+  font-family: "Spartan", sans-serif;
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
@@ -48,23 +57,31 @@ body {
 /* --------------------------------- */
 /* FOOTER */
 .pie {
-  height: 100%;
   display: flex;
-  text-align: center;
   justify-content: center;
+  align-items: center;
 }
-.pie p {
-  margin: 20px 0;
-  padding: 50px 0;
-  font-size: 0.8rem;
-  font-weight: 800;
+.pie .p-t {
+  font-size: 15px;
+  padding: 20px 10px;
+  margin: 40px 0;
+}
+.pie .fa-brands {
+  font-size: 23px;
+  margin: 10px;
+  color: #000;
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  .pie p {
-    padding: 50px;
-    font-size: 0.7rem;
-    font-weight: 800;
+  .pie .p-t {
+    font-size: 10px;
+    padding: 20px 10px;
+  }
+  .pie .fa-brands {
+    font-size: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: inherit;
   }
 }
 /* --------------------------------- */
@@ -127,6 +144,7 @@ body {
 .proyec .proyec__conte {
   background-color: rgba(0, 0, 0, 0.1);
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
   gap: 20px;
@@ -192,30 +210,14 @@ body {
 }
 /* ----------------------------------------------------- */
 /* ACERCA DE MI */
-.contenedorojo {
+.about {
   width: 100%;
-  height: 100vh;
 }
-.contenedorojo .sobremi {
-  background-color: rgba(17, 34, 17, 0.1333333333);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  gap: 5px;
-}
-.contenedorojo .sobremi .sm-titulo {
-  font-size: 2.5rem;
-}
-.contenedorojo .sobremi .text {
-  font-size: 15px;
-  text-align: justify;
-  font-family: "Spartan", sans-serif;
-  margin: 10px;
-}
-.contenedorojo .sonbreimg .fotografo {
-  width: 100%;
-  height: 100%;
+
+.conta-img {
+  background-image: url(../img/sobremi2.jpg);
+  background-size: cover;
+  min-height: 100vh;
 }
 
 /* MEDIA Q - ACERCA DE MI*/
@@ -228,9 +230,9 @@ body {
 }
 .formContainer .texto1 {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin-bottom: 70px;
 }
 .formContainer .direccion {
@@ -256,7 +258,7 @@ body {
   margin: 10px;
   padding: 15px;
   background-color: rgba(17, 34, 17, 0);
-  color: black;
+  color: #000;
   border: none;
   border-bottom: solid 3px;
   font-family: "Spartan", sans-serif;
@@ -283,9 +285,9 @@ body {
 
 .pie-fom {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .pie-fom #pf {
   /* text-align: center; */
@@ -297,28 +299,12 @@ body {
 .pie-fom .gmail {
   /* display: inline-block; */
   text-decoration: none;
-  color: black;
+  color: #000;
   margin: 10px;
   font-size: 13px;
 }
 .pie-fom #telef {
   font-size: 13px;
-}
-
-.iconform {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-.iconform .fa-instagram {
-  font-size: 25px;
-  color: black;
-}
-.iconform .fa-twitter {
-  font-size: 25px;
-  color: black;
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
@@ -341,7 +327,7 @@ body {
   .formContainer .form__label {
     font-size: 12px;
   }
-  .formContainer .form__input, .formContainer .form__textarea {
+  .formContainer .form__input, .formContainer .form .form__textarea, .formContainer .form__textarea {
     width: 80%;
     padding: 5px;
     font-size: 10px;
@@ -385,7 +371,7 @@ body {
   .formContainer .form__label {
     font-size: 15px;
   }
-  .formContainer .form__input, .formContainer .form__textarea {
+  .formContainer .form__input, .formContainer .form .form__textarea, .formContainer .form__textarea {
     width: 60%;
     padding: 8px;
     font-size: 15px;

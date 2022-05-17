@@ -7,8 +7,23 @@ body{
     font-family: 'Spartan', sans-serif;
 }
 
+// variabes
 $f-s: 15px;
 $f-m: 'Spartan', sans-serif;
+$color-b: #000;
+
+// mixin
+@mixin d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin width ($w) {
+    width: $w;
+    // iria un height para q tenga mas sentido pero no tengo 
+}
+// extend
+// en la parte del formulario
 
 
 /* NAV */
@@ -38,14 +53,22 @@ $f-m: 'Spartan', sans-serif;
 /* MENU */
 
 .banner{
-    display: flex;
-    justify-content: center;
+    @include d-flex();
     margin: 20px auto;
     h2{
         font-size: 50px;
         font-weight: 15;
         letter-spacing: 10px;
     }
+}
+
+// BOTON
+.btn-outline-light {
+    color: white;
+    border-color: #f8f9fa00;
+    border-bottom-color: currentcolor;
+    font-size: 20px;
+    font-family: $f-m;
 }
 
 
@@ -60,24 +83,30 @@ $f-m: 'Spartan', sans-serif;
 /* FOOTER */
 
 .pie{
-    height: 100%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    p{
-        margin: 20px 0;
-        padding: 50px 0;
-        font-size: 0.8rem;
-        font-weight: 800;
+    @include d-flex();
+    .p-t {
+        font-size: 15px;
+        padding: 20px 10px;
+        margin: 40px 0;
+    }
+    .fa-brands{
+        font-size: 23px;
+        margin: 10px;
+        color: $color-b;
     }
 }
 
 @media screen and (min-width:320px) and (max-width: 479px){
     .pie{
-        p{
-            padding: 50px;
-            font-size: 0.7rem;
-            font-weight: 800;
+        .p-t{
+            font-size: 10px;
+            padding: 20px 10px;
+        }
+        .fa-brands{
+            font-size: 15px;
+            margin: 10px;
+            display: flex;
+            flex-direction: inherit;
         }
     } 
     
@@ -88,7 +117,7 @@ $f-m: 'Spartan', sans-serif;
 /* GRILLA RETRATO */
 
 .galleryRetra{
-    width: 80%;
+    @include width(80%);
     margin: auto auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -98,7 +127,7 @@ $f-m: 'Spartan', sans-serif;
     .retra{
         display: flex;
         .retra__img{
-            width: 100%;
+            @include width(100%);
             box-shadow: 23px 28px 17px -24px rgba(0,0,0,0.79);
             transition: 1s;
         }
@@ -151,8 +180,7 @@ $f-m: 'Spartan', sans-serif;
     margin: 10px auto;
     .proyec__conte{
         background-color: rgba(0, 0, 0, 0.10);
-        display: flex;
-        align-items: center;
+        @include d-flex();
         text-align: center;
         gap: 20px;
         margin: 50px;
@@ -233,34 +261,14 @@ $f-m: 'Spartan', sans-serif;
 /* ----------------------------------------------------- */
 
 /* ACERCA DE MI */
-
-.contenedorojo{
+.about{
     width: 100%;
-    height: 100vh;
-    .sobremi{
-        background-color: #1212;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        gap: 5px;
-        .sm-titulo{
-            font-size: 2.5rem;
-        }
-        .text{
-            font-size: 15px;
-            text-align: justify;
-            font-family: $f-m;
-            margin: 10px;
-        }
-}
-.sonbreimg{
     
-    .fotografo{
-        width: 100%;
-        height: 100%;
-    }
 }
+.conta-img {
+    background-image: url(../img/sobremi2.jpg);
+    background-size: cover;
+    min-height: 100vh;
 }
 
 
@@ -276,10 +284,8 @@ $f-m: 'Spartan', sans-serif;
     margin: 30px auto;
     padding: 100px 20px;
     .texto1{
-        display: flex;
+        @include d-flex();
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin-bottom: 70px;
         }.direccion{
         font-size: 25px;
@@ -298,19 +304,19 @@ $f-m: 'Spartan', sans-serif;
                 font-size: $f-s;
                 margin: 5px;
             }
-            .form__input, .form__textarea{
+            .form__input{
                 width: 50%;
                 margin: 10px;
                 padding: 15px;
                 background-color: #1210;
-                color: black;
+                color: $color-b;
                 border: none;
                 border-bottom: solid 3px ;
                 font-family: $f-m;
                 font-size: $f-s;
-                
             }
-            .form__textarea{
+            .form__textarea {
+                @extend .form__input;
                 height: 90px;
                 resize: none;
             }
@@ -332,10 +338,8 @@ $f-m: 'Spartan', sans-serif;
         }
 }
 .pie-fom{
-    display: flex;
+    @include d-flex();
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     #pf{
         /* text-align: center; */
         margin: 50px;
@@ -346,29 +350,12 @@ $f-m: 'Spartan', sans-serif;
     .gmail{
         /* display: inline-block; */
         text-decoration: none;
-        color: black;
+        color: $color-b;
         margin: 10px;
         font-size: 13px;
     }
     #telef{
         font-size: 13px;
-    }
-}
-
-
-.iconform{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    .fa-instagram{
-        font-size: 25px;
-        color: black;
-    }
-    .fa-twitter{
-        font-size: 25px;
-        color: black;
     }
 }
 
