@@ -42,7 +42,7 @@ body {
 }
 
 .btn-outline-light {
-  color: white;
+  color: #fff;
   border-color: rgba(248, 249, 250, 0);
   border-bottom-color: currentcolor;
   font-size: 20px;

@@ -10,7 +10,15 @@ body{
 // variabes
 $f-s: 15px;
 $f-m: 'Spartan', sans-serif;
-$color-b: #000;
+// =======================================
+
+// paleta de colors para maps
+$paleta: (
+    color1: #000,
+    color2: #5b6770,
+    color3: #fff,
+);
+// =======================================
 
 // mixin
 @mixin d-flex {
@@ -22,9 +30,10 @@ $color-b: #000;
     width: $w;
     // iria un height para q tenga mas sentido pero no tengo 
 }
+// =======================================
+
 // extend
 // en la parte del formulario
-
 
 /* NAV */
 
@@ -64,13 +73,12 @@ $color-b: #000;
 
 // BOTON
 .btn-outline-light {
-    color: white;
+    color: map-get($map: $paleta, $key:color3 );
     border-color: #f8f9fa00;
     border-bottom-color: currentcolor;
     font-size: 20px;
     font-family: $f-m;
 }
-
 
 @media screen and (min-width:320px) and (max-width: 479px) {
     .banner h2{
@@ -92,7 +100,7 @@ $color-b: #000;
     .fa-brands{
         font-size: 23px;
         margin: 10px;
-        color: $color-b;
+        color: map-get($map: $paleta, $key:color1 );
     }
 }
 
@@ -309,7 +317,7 @@ $color-b: #000;
                 margin: 10px;
                 padding: 15px;
                 background-color: #1210;
-                color: $color-b;
+                color: map-get($map: $paleta, $key:color1 );
                 border: none;
                 border-bottom: solid 3px ;
                 font-family: $f-m;
@@ -350,7 +358,7 @@ $color-b: #000;
     .gmail{
         /* display: inline-block; */
         text-decoration: none;
-        color: $color-b;
+        color: map-get($map: $paleta, $key:color1 );
         margin: 10px;
         font-size: 13px;
     }
