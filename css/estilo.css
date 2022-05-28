@@ -28,6 +28,10 @@ body {
     font-size: 20px;
   }
 }
+.texlog {
+  font-size: 20px;
+}
+
 /* --------------------------------- */
 /* MENU */
 .banner {
@@ -53,6 +57,15 @@ body {
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .banner h2 {
     font-size: 30px;
+  }
+
+  .btn-outline-light {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 600px) {
+  .btn-outline-light {
+    font-size: 15px;
   }
 }
 /* --------------------------------- */
@@ -220,7 +233,7 @@ body {
 }
 .about .conta-tx .parrafo {
   padding: 10px 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .about .conta-img {
   background-image: url(../img/sobremi2.jpg);
