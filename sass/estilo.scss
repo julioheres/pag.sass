@@ -193,80 +193,117 @@ $paleta: (
 
 /* --------------------------------- */
 
-/* TRABAJOS / PROYECTOS */
+/* SERVICIOS */
 
-.proyec{
-    width: 90%;
-    margin: 10px auto;
-    .proyec__conte{
-        background-color: rgba(0, 0, 0, 0.10);
-        @include d-flex();
-        text-align: center;
-        gap: 20px;
-        margin: 50px;
-        box-shadow: 5px 6px 12px -1px rgba(0,0,0,0.3);
-        .proyecimg{
-            width: 100%;
-            .descrip-titu{
-                margin: 10px;
-            }
-        }
+.ser{
+    padding: 0;
+    .imgmodel{
+        width: 100%;
     }
 }
 
-/* MEDIA Q / TRABAJ-PROYEC */
-//MEDIA Q / TRABAJ-PROYEC
+
+.ser2{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    margin: 50px 0 0 0;
+
+    .hr{
+        height: 2px;
+        color: black;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .serv-titu{
+        text-align: center;
+        padding-top: 5rem;
+        // padding-bottom: 1rem;
+    }
+    .rott{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-left: 10px;
+        gap: 10px;
+
+        // .serv-det{
+        
+        // }
+        // .serv-det2{
+        
+        // }
+    }
+    .btn {
+        margin: 40px 25%;
+        width: 50%;
+    }
+}
+
+// MEDIA Q / SERVICIOS
 
 @media screen and (min-width:320px) and (max-width: 600px){
-    .proyec{
-        width: 100%;
-        margin: 10px auto;
-        .proyec__conte{
-            background-color: rgba(0, 0, 0, 0.10);
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            gap: 5px;
-            margin: 20px;
-            box-shadow: 5px 6px 12px -1px rgba(0,0,0,0.3);
-            .proyecimg{
-                width: 100%;
-                .descrip-titu{
-                    margin: 10px;
-                    .proyec__conte--box{
-                        padding: 10px;
-                    }
-                }
+    .ser{
+        padding: 0;
+        width: 90%;
+        margin: 0 auto;
+        .imgmodel{
+            width: 100%;
+        }
+    }
+    
+    
+    .ser2{
+        // background-color: grey;
+        height: 130px;
+        // display: flex;
+        margin: 0 auto;
+        // flex-direction: column;
+        width: 75%;
+
+        .hr{
+            height: 2px;
+            color: black;
+            width: 90%;
+            margin: 0 auto;
+        }
+    
+        .serv-titu{
+            // text-align: center;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            font-size: 15px;
+            margin: 0;
+        }
+        .rott{
+            // display: flex;
+            // flex-direction: column;
+            padding-top: 10px;
+            // padding-left: 10px;
+            gap: 0px;
+            .serv-det{
+                font-size: 10px;
+                margin: 0;
             }
+            .serv-det2{
+                font-size: 10px;
+                margin: 2px 0;
+            }
+        }
+        .l-bt{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .btn {
+            font-size: 12px;
+            margin: 10px 0 0 0;
         }
     }
 }
 
-@media screen and (min-width:600px) and (max-width: 768px){
-    .proyec{
-        width: 100%;
-        margin: 10px auto;
-        .proyec__conte{
-            background-color: rgba(0, 0, 0, 0.10);
-            display: flex;
-            align-items: center;
-            text-align: center;
-            gap: 5px;
-            margin: 20px;
-            box-shadow: 5px 6px 12px -1px rgba(0,0,0,0.3);
-            .proyecimg{
-                width: 100%;
-                .descrip-titu{
-                    margin: 10px;
-                    .proyec__conte--box{
-                        padding: 10px;
-                    }
-                }
-            }
-        }
-    }
-}
 
 /* ----------------------------------------------------- */
 
@@ -479,9 +516,9 @@ $paleta: (
             font-size: 12px;
         }
         .form__input, .form__textarea {
-            width: 80%;
+            width: 50%;
             padding: 5px;
-            font-size: 10px;
+            font-size: 15px;
         }
         .form__textarea {
             height: 70px;
