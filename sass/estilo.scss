@@ -299,7 +299,122 @@ $paleta: (
         }
         .btn {
             font-size: 12px;
-            margin: 10px 0 0 0;
+            margin: 5px 0 0 0;
+            width: 40%;
+        }
+    }
+}
+@media screen and (min-width:601px) and (max-width: 768px){
+    .ser{
+        padding: 0;
+        width: 90%;
+        margin: 0 auto;
+        .imgmodel{
+            width: 100%;
+        }
+    }
+    
+    
+    .ser2{
+        // background-color: grey;
+        height: 150px;
+        // display: flex;
+        margin: 0 auto;
+        // flex-direction: column;
+        width: 75%;
+
+        .hr{
+            height: 2px;
+            color: black;
+            width: 90%;
+            margin: 0 auto;
+        }
+    
+        .serv-titu{
+            padding-top: 15px;
+        padding-bottom: 5px;
+        font-size: 20px;
+        margin: 0;
+        }
+        .rott{
+            // display: flex;
+            // flex-direction: column;
+            padding-top: 10px;
+            // padding-left: 10px;
+            gap: 5px;
+            .serv-det{
+                font-size: 13px;
+                margin: 0;
+            }
+            .serv-det2{
+                font-size: 13px;
+                margin: 0;
+            }
+        }
+        .l-bt{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .btn {
+            font-size: 13px;
+            margin: 0;
+            width: 40%;
+        }
+    }
+}
+@media screen and (min-width:769px) and (max-width: 991px){
+    .ser{
+        padding: 0;
+        .imgmodel{
+            width: 100%;
+        }
+    }
+    
+    
+    .ser2{
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        height: 270px;
+        margin: auto;
+    
+        .hr{
+            height: 2px;
+            color: black;
+            width: 90%;
+            margin: 0 auto;
+        }
+    
+        .serv-titu{
+            text-align: center;
+            padding-top: 2rem;
+            margin: 0;
+        }
+        .rott{
+            display: flex;
+            flex-direction: column;
+            padding-top: 15px;
+            padding-left: 10px;
+            gap: 10px;
+    
+            .serv-det{
+                margin: 0;
+                font-size: 15px;
+            }
+            .serv-det2{
+                margin: 0;
+                font-size: 15px;
+            }
+        }
+        .l-bt{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .btn {
+            margin-top: 60px;
+            width: auto;
         }
     }
 }
