@@ -151,191 +151,96 @@ body {
 }
 /* --------------------------------- */
 /* SERVICIOS */
-.ser {
+.cont-serv {
+  width: 80%;
+}
+.cont-serv .cont-serv2 .ser {
   padding: 0;
 }
-.ser .imgmodel {
+.cont-serv .cont-serv2 .ser .imgmodel {
   width: 100%;
 }
-
-.ser2 {
+.cont-serv .cont-serv2 .serv {
   background-color: grey;
   display: flex;
   flex-direction: column;
-  height: 400px;
-  margin: 50px 0 0 0;
+  justify-content: space-evenly;
 }
-.ser2 .hr {
-  height: 2px;
-  color: black;
-  width: 90%;
-  margin: 0 auto;
-}
-.ser2 .serv-titu {
+.cont-serv .cont-serv2 .serv .linkboton {
   text-align: center;
-  padding-top: 5rem;
 }
-.ser2 .rott {
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
-  padding-left: 10px;
-  gap: 10px;
-}
-.ser2 .btn {
-  margin: 40px 25%;
-  width: 50%;
+.cont-serv .cont-serv2 .serv .linkboton .boton {
+  padding: auto;
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
-  .ser {
-    padding: 0;
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .cont-serv {
     width: 90%;
-    margin: 0 auto;
   }
-  .ser .imgmodel {
+  .cont-serv .cont-serv2 {
     width: 100%;
   }
-
-  .ser2 {
-    height: 130px;
-    margin: 0 auto;
-    width: 75%;
-  }
-  .ser2 .hr {
-    height: 2px;
-    color: black;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .ser2 .serv-titu {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    font-size: 15px;
-    margin: 0;
-  }
-  .ser2 .rott {
-    padding-top: 10px;
-    gap: 0px;
-  }
-  .ser2 .rott .serv-det {
-    font-size: 10px;
-    margin: 0;
-  }
-  .ser2 .rott .serv-det2 {
-    font-size: 10px;
-    margin: 2px 0;
-  }
-  .ser2 .l-bt {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-  }
-  .ser2 .btn {
-    font-size: 12px;
-    margin: 5px 0 0 0;
-    width: 40%;
-  }
-}
-@media screen and (min-width: 601px) and (max-width: 768px) {
-  .ser {
-    padding: 0;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .ser .imgmodel {
-    width: 100%;
-  }
-
-  .ser2 {
-    height: 150px;
-    margin: 0 auto;
-    width: 75%;
-  }
-  .ser2 .hr {
-    height: 2px;
-    color: black;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .ser2 .serv-titu {
-    padding-top: 15px;
-    padding-bottom: 5px;
-    font-size: 20px;
-    margin: 0;
-  }
-  .ser2 .rott {
-    padding-top: 10px;
-    gap: 5px;
-  }
-  .ser2 .rott .serv-det {
-    font-size: 13px;
-    margin: 0;
-  }
-  .ser2 .rott .serv-det2 {
-    font-size: 13px;
-    margin: 0;
-  }
-  .ser2 .l-bt {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-  }
-  .ser2 .btn {
-    font-size: 13px;
-    margin: 0;
-    width: 40%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 991px) {
-  .ser {
+  .cont-serv .cont-serv2 .ser {
     padding: 0;
   }
-  .ser .imgmodel {
+  .cont-serv .cont-serv2 .ser .imgmodel {
     width: 100%;
   }
-
-  .ser2 {
+  .cont-serv .cont-serv2 .serv {
     background-color: grey;
     display: flex;
-    flex-direction: column;
-    height: 270px;
-    margin: auto;
   }
-  .ser2 .hr {
-    height: 2px;
-    color: black;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .ser2 .serv-titu {
+  .cont-serv .cont-serv2 .serv .subti-serv {
     text-align: center;
-    padding-top: 2rem;
-    margin: 0;
+    padding: 10px;
+    letter-spacing: 5px;
+    text-decoration: line-through;
+    font-weight: 600;
   }
-  .ser2 .rott {
+  .cont-serv .cont-serv2 .text-serv {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .cont-serv .cont-serv2 .linkboton {
+    margin-bottom: 15px;
+  }
+  .cont-serv .cont-serv2 .linkboton .boton {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 700px) {
+  .cont-serv {
+    width: 90%;
+  }
+  .cont-serv .cont-serv2 {
+    width: 100%;
+  }
+  .cont-serv .cont-serv2 .ser {
+    padding: 0;
+  }
+  .cont-serv .cont-serv2 .ser .imgmodel {
+    width: 100%;
+  }
+  .cont-serv .cont-serv2 .serv {
+    background-color: grey;
     display: flex;
-    flex-direction: column;
-    padding-top: 15px;
-    padding-left: 10px;
-    gap: 10px;
   }
-  .ser2 .rott .serv-det {
-    margin: 0;
-    font-size: 15px;
+  .cont-serv .cont-serv2 .serv .subti-serv {
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 5px;
+    text-decoration: line-through;
+    font-weight: 600;
   }
-  .ser2 .rott .serv-det2 {
-    margin: 0;
-    font-size: 15px;
+  .cont-serv .cont-serv2 .text-serv {
+    font-size: 12px;
+    margin-bottom: 5px;
   }
-  .ser2 .l-bt {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
+  .cont-serv .cont-serv2 .linkboton {
+    margin-bottom: 15px;
   }
-  .ser2 .btn {
-    margin-top: 60px;
-    width: auto;
+  .cont-serv .cont-serv2 .linkboton .boton {
+    width: 60%;
   }
 }
 /* ----------------------------------------------------- */
