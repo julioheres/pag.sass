@@ -176,6 +176,9 @@ body {
 @media screen and (min-width: 320px) and (max-width: 575px) {
   .cont-serv {
     width: 90%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
   }
   .cont-serv .cont-serv2 {
     width: 100%;
@@ -192,7 +195,7 @@ body {
   }
   .cont-serv .cont-serv2 .serv .subti-serv {
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
     letter-spacing: 5px;
     text-decoration: line-through;
     font-weight: 600;
@@ -205,15 +208,56 @@ body {
     margin-bottom: 15px;
   }
   .cont-serv .cont-serv2 .linkboton .boton {
-    width: 60%;
+    width: 50%;
+    font-size: 13px;
   }
 }
-@media screen and (min-width: 576px) and (max-width: 700px) {
+@media screen and (min-width: 576px) and (max-width: 929px) {
   .cont-serv {
     width: 90%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
   }
   .cont-serv .cont-serv2 {
+    width: 90%;
+  }
+  .cont-serv .cont-serv2 .ser {
     width: 100%;
+  }
+  .cont-serv .cont-serv2 .ser .imgmodel {
+    width: 100%;
+  }
+  .cont-serv .cont-serv2 .serv {
+    background-color: grey;
+    display: flex;
+    width: 100%;
+  }
+  .cont-serv .cont-serv2 .serv .subti-serv {
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 5px;
+    text-decoration: line-through;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .cont-serv .cont-serv2 .text-serv {
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+  .cont-serv .cont-serv2 .linkboton {
+    margin-bottom: 15px;
+  }
+  .cont-serv .cont-serv2 .linkboton .boton {
+    width: 40%;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 930px) {
+  .cont-serv {
+    width: 80%;
+    padding: 0;
   }
   .cont-serv .cont-serv2 .ser {
     padding: 0;
@@ -223,24 +267,26 @@ body {
   }
   .cont-serv .cont-serv2 .serv {
     background-color: grey;
-    display: flex;
   }
   .cont-serv .cont-serv2 .serv .subti-serv {
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
     letter-spacing: 5px;
     text-decoration: line-through;
     font-weight: 600;
+    font-size: 25px;
   }
   .cont-serv .cont-serv2 .text-serv {
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 5px;
+    padding: 0 10px;
   }
   .cont-serv .cont-serv2 .linkboton {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
   .cont-serv .cont-serv2 .linkboton .boton {
     width: 60%;
+    font-size: 15px;
   }
 }
 /* ----------------------------------------------------- */
